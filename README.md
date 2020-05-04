@@ -16,7 +16,9 @@ Using Visual Studio Code, we have created an automated pipeline that takes in ne
   
 2. We then clean and transform the data to analyze the data, create new dataframes, and load the cleaned data to an SQL database.
 * The data transformation is performed with the following assumptions to exclude any bad data:
+    * All imported data needs to be cleaned.
     * Drop columns with >90% null values. This is based on the assumption that 10% of a large dataframe provides inconsequential information.
+    * We know that there will be duplicate data, which we need to clean and account for.
     * Remove outliers that are mismatched in different datasets.
     * Creating clean data will cause us to unintentionally drop a few values. Because of this, we will assume that losing this small amount of data won't affect impact our analysis since this is a fairly large dataset.
     * We intentionally drop columns that are not necessary for Amazing Prime's analysis, such as video or runtime.
