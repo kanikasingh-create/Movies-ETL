@@ -1,7 +1,7 @@
 # Movies-ETL
 
 ## Overview
-* Creating an automated ETL pipeline to:
+Creating an automated ETL pipeline to:
   (a) Extract data from multiple sources.
   (b) Clean and transform the data automatically using Pandas and regular expressions and;
   (c) Load the new data into a database in PostgreSQL.
